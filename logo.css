@@ -1,0 +1,149 @@
+.brand img {
+  display: block;
+  width: 150px;
+  height: 64px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.brand-footer img {
+  width: 180px;
+  height: 96px;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.4));
+}
+
+.leader-photo {
+  width: 125px;
+  height: 150px;
+  margin: 0;
+  overflow: hidden;
+  background: #DDF2F3;
+}
+
+.leader-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.accreditation-strip {
+  padding: 56px 0;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(6, 41, 90, 0.15);
+}
+
+.accreditation-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.8fr;
+  gap: 28px 64px;
+  align-items: end;
+}
+
+.accreditation-grid h2 {
+  margin: 0;
+  color: #06295A;
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+.credential-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-left: 1px solid rgba(6, 41, 90, 0.15);
+}
+
+.credential-list div {
+  min-height: 105px;
+  padding: 10px 24px;
+  border-right: 1px solid rgba(6, 41, 90, 0.15);
+}
+
+.credential-list strong,
+.credential-list span {
+  display: block;
+}
+
+.credential-list strong {
+  color: #06295A;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.credential-list span {
+  margin-top: 10px;
+  color: #59666d;
+  font-size: 12px;
+}
+
+.credential-note {
+  grid-column: 2;
+  margin: 0;
+  color: #6a757b;
+  font-size: 10px;
+}
+
+.direct-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 42px;
+  margin: 0 0 32px;
+}
+
+.direct-contact a,
+.direct-contact span,
+.direct-contact strong {
+  display: block;
+}
+
+.direct-contact a {
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.direct-contact span {
+  color: #75D2D9;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.direct-contact strong {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .brand img {
+    width: 130px;
+    height: 58px;
+  }
+
+  .leader-photo {
+    width: 100%;
+    height: 260px;
+  }
+
+  .accreditation-grid,
+  .credential-list {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-list {
+    border-top: 1px solid rgba(6, 41, 90, 0.15);
+    border-left: 0;
+  }
+
+  .credential-list div {
+    min-height: auto;
+    padding: 20px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(6, 41, 90, 0.15);
+  }
+
+  .credential-note {
+    grid-column: 1;
+  }
+}
